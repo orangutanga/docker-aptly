@@ -9,8 +9,8 @@ set -e
 # file or mirror it similarly as done below to keep up with security updates.
 
 DEBIAN_RELEASE=buster
-UPSTREAM_URL="http://deb.debian.org/debian/"
-COMPONENTS=( main )
+UPSTREAM_URL="http://debian.mirror.digitalpacific.com.au/debian"
+COMPONENTS=( main contrib non-free )
 REPOS=( ${DEBIAN_RELEASE} ${DEBIAN_RELEASE}-updates )
 
 # Setup gpg-agent to cache GPG passphrase for unattended operation
